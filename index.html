@@ -86,6 +86,7 @@
             display: flex;
             justify-content: center;
             gap: 15px;
+            flex-wrap: wrap;
         }
 
         .btn {
@@ -151,6 +152,68 @@
             padding: 20px;
             text-align: center;
             border-bottom: 3px solid var(--gold);
+        }
+
+        /* Occasions Grid */
+        .occasions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            text-align: center;
+        }
+
+        .occasion-tag {
+            background: var(--gold);
+            color: var(--black);
+            padding: 12px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+        .occasion-tag:hover {
+            transform: scale(1.05);
+            background: var(--black);
+            color: var(--gold);
+            border: 2px solid var(--gold);
+        }
+
+        /* Featured Hamper */
+        .featured-hamper {
+            background: linear-gradient(135deg, var(--gold), #f0e68c);
+            color: var(--black);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px auto;
+            max-width: 600px;
+            border: 3px solid var(--gold);
+        }
+
+        .featured-hamper h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--black);
+        }
+
+        .featured-hamper ul {
+            list-style: none;
+            padding: 15px 0;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .featured-hamper li {
+            padding: 8px 0;
+            font-size: 1rem;
+            color: var(--black);
+        }
+
+        .featured-hamper li:before {
+            content: "✓ ";
+            color: var(--black);
+            font-weight: bold;
+            margin-right: 10px;
         }
 
         /* Testimonials */
@@ -235,6 +298,7 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#corporate">Corporate Gifting</a></li>
+                <li><a href="#occasions">Occasions</a></li>
                 <li><a href="#features">Why Us</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#faq">FAQs</a></li>
@@ -245,11 +309,36 @@
 
     <section class="hero" id="corporate">
         <h1>Make Your Brand Memorable</h1>
-        <p>Whether you are rewarding employees, impressing clients, or celebrating milestones, our corporate gifting solutions help strengthen relationships through thoughtful branding and premium pre[...]
+        <p>Whether you are rewarding employees, impressing clients, or celebrating milestones, our corporate gifting solutions help strengthen relationships through thoughtful branding and premium gifts. Simplify Gifting - pick from our versatile range and customize your gifts!</p>
         <div class="cta-buttons">
             <a href="#contact" class="btn btn-primary">Get Custom Quote</a>
             <a href="#contact" class="btn btn-secondary">Request Catalogue</a>
             <a href="#contact" class="btn btn-secondary">Talk to Our Team</a>
+        </div>
+    </section>
+
+    <section id="occasions" style="background: var(--gray);">
+        <h2 class="section-title">Gifts for Every Occasion</h2>
+        <p style="text-align:center; margin-bottom: 30px; font-size: 1.1rem;">Our company specializes in customized gift and hamper options for various occasions</p>
+        <div class="occasions-grid">
+            <div class="occasion-tag">🎁 Rakhi</div>
+            <div class="occasion-tag">🎂 Birthday</div>
+            <div class="occasion-tag">💐 Return Favours</div>
+            <div class="occasion-tag">🪔 Diwali</div>
+            <div class="occasion-tag">🎉 Corporate Events</div>
+            <div class="occasion-tag">🎄 Christmas</div>
+            <div class="occasion-tag">🎊 New Year</div>
+            <div class="occasion-tag">👨 Father's Day</div>
+        </div>
+
+        <div class="featured-hamper">
+            <h3>Father's Day Special ⭐</h3>
+            <p style="margin-bottom: 15px; font-size: 0.95rem;"><strong>Hamper #1</strong></p>
+            <ul>
+                <li>Initial Keychain</li>
+                <li>Handmade Card with Song Scanner (of your choice)</li>
+            </ul>
+            <p style="margin-top: 15px; font-size: 0.9rem; font-style: italic;">Gifts can be personalized/customized as required.</p>
         </div>
     </section>
 
@@ -283,7 +372,7 @@
             <div class="testimonial-box">
                 <img src="00.jpeg" alt="Beautiful Keychains" class="testimonial-image">
                 <div class="testimonial-text">
-                    <p>"Key chains are really beautiful! I need some more M - Female, B - Female, C - Male. Amazing quality and beautiful products wrapped with care and love. Thank you The gifting lab[...]
+                    <p>"Key chains are really beautiful! I need some more M - Female, B - Female, C - Male. Amazing quality and beautiful products wrapped with care and love. Thank you The gifting lab!"</p>
                 </div>
             </div>
             <div class="testimonial-box">
@@ -318,8 +407,9 @@
             <div>
                 <h4>Contact Us</h4>
                 <p>Email: hello@thegiftinglab.com</p>
-                <p>Phone: +91 98765 43210</p>
+                <p>Phone: +91 9769334664</p>
                 <p><a href="#" style="color: var(--gold);">Instagram Link</a></p>
+                <p style="margin-top: 10px; font-size: 0.9rem;"><strong>The Gifting Lab (DB Trends)</strong></p>
             </div>
             <div>
                 <h4>Quick Links</h4>
@@ -340,7 +430,7 @@
         <p>&copy; 2026 The Gifting Lab. All Rights Reserved. Secure Payment Gateway Enabled.</p>
     </footer>
 
-    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">Chat on WhatsApp</a>
+    <a href="https://wa.me/919769334664" class="whatsapp-float" target="_blank">Chat on WhatsApp</a>
 
 </body>
 </html>
